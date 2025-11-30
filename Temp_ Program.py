@@ -11,7 +11,7 @@ for i in range(10):
 
     if humidity is not None and temperature is not None:
         temperature_Fahrenheit = temperature * 9/5 + 32
-        print("Temperature={0:0.1f}C  Humidity={1:0.1f}%".format(
+        print("Temperature={0:0.1f}F  Humidity={1:0.1f}%".format(
             temperature_Fahrenheit, humidity))
     
         with open("Stored_Data.csv", "a", newline='') as file:
