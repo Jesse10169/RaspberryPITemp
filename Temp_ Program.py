@@ -16,7 +16,7 @@ for i in range(10):
     
         with open("log.csv", "a", newline='') as file:
             writer = csv.writer(file)
-            writer.writerow(temperature_Fahrenheit, humidity,time.strftime('%Y-%m-%d %H:%M:%S'))
+            writer.writerow([temperature_Fahrenheit, humidity, time.strftime('%Y-%m-%d %H:%M:%S')])
             file.flush()
     else:
         print("Sensor failure. Check wiring.")
